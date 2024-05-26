@@ -41,3 +41,11 @@ These settings are optimized for development with Next.js, Go, Rust and Python p
 - **Auto Formatting:** Provides the ability to automatically format your code.
 - **Linting:** Offers the ability to check your code for errors and inconsistencies.
 - **Debugging:** Enables preparing your code for debugging and facilitates your debugging process.
+
+## Contributing
+
+Contributions are welcome! Please open a pull request or file an issue.
+
+## License
+
+This project is licensed under the MIT License. See the [`LICENSE`](LICENSE) file for more information.
