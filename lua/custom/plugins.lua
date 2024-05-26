@@ -34,7 +34,18 @@ local plugins = {
       },
     },
   },
-  
+  {
+    "windwp/nvim-ts-autotag",
+    ft = {
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+    },
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end,
+  },
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function()
