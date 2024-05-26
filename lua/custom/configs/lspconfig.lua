@@ -41,4 +41,11 @@ lspconfig.pyright.setup {
   filetypes = { "python" },
 }
 
+local servers_for_web_dev = { "tsserver", "tailwindcss", "eslint", "cssls" }
 
+for _, lsp in ipairs(servers_for_web_dev) do
+  lspconfig[lsp].setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+  }
+end
