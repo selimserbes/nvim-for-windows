@@ -1,7 +1,18 @@
 local extension_path = vim.env.HOME .. "\\AppData\\Local\\nvim-data\\mason\\packages\\"
 
 local plugins = {
+  
+  
+  
+  
 
+  {
+    "stevearc/conform.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      require "custom.configs.formatter"
+    end,
+  },
   {
     "mfussenegger/nvim-lint",
     event = "VeryLazy",
