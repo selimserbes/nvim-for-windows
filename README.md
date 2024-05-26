@@ -32,3 +32,6 @@ This repository contains a customized Neovim configuration for development with 
 6. Copy `nvim/init.vim` to Neovim's configuration directory (`%APPDATA%\nvim\` on Windows).
 7. Start `nvim` and wait for the plugins to install.
 
+## Usage
+
+These settings are optimized for development with Next.js, Go, Rust and Python projects. Additionally, they include features such as color schemes, auto-completion, and syntax highlighting.
