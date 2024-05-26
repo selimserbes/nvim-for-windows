@@ -1,7 +1,19 @@
 local extension_path = vim.env.HOME .. "\\AppData\\Local\\nvim-data\\mason\\packages\\"
 
 local plugins = {
-  
+  {
+    "mfussenegger/nvim-dap-python",
+    ft = "python",
+    dependencies = {
+      "mfussenegger/nvim-dap",
+      "rcarriga/nvim-dap-ui",
+    },
+    config = function(_, opts)
+      local path = extension_path .. "debugpy/venv/Scripts/python.exe"
+      require("dap-python").setup(path)
+      require("core.utils").load_mappings "dap"
+    end,
+  },
   {
     "olexsmir/gopher.nvim",
     ft = "go",
