@@ -3,6 +3,20 @@ local extension_path = vim.env.HOME .. "\\AppData\\Local\\nvim-data\\mason\\pack
 local plugins = {
 
   {
+    "mfussenegger/nvim-lint",
+    event = "VeryLazy",
+    config = function()
+      require "custom.configs.lint"
+    end,
+  },
+  {
+    "vim-crystal/vim-crystal",
+    ft = "crystal",
+    config = function(_)
+      vim.g.crystal_auto_format = 1
+    end,
+  },
+  {
     "neovim/nvim-lspconfig",
     config = function()
       require "plugins.configs.lspconfig"
