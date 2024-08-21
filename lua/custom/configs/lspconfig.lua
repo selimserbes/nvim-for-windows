@@ -39,6 +39,11 @@ lspconfig.pyright.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   filetypes = { "python" },
+  settings = {
+    python = {
+      pythonPath = vim.env.HOME .. "\\AppData\\Local\\Programs\\Python\\Python312\\python",
+    },
+  },
 }
 
 local servers_for_web_dev = { "tsserver", "tailwindcss", "eslint", "cssls" }

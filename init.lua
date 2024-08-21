@@ -1,7 +1,5 @@
 require "core"
 
-vim.g.python3_host_prog = vim.env.HOME .. "\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
-
 local custom_init_path = vim.api.nvim_get_runtime_file("lua\\custom\\init.lua", false)[1]
 
 if custom_init_path then
