@@ -16,7 +16,7 @@ This repository contains a customized Neovim configuration for development with 
 
 4. To integrate nvchad into your Neovim setup:
 
-   1. If you're using Command Prompt (CMD):
+   1. If you're using Command Prompt (CMD)
 
    ```shell
     git clone https://github.com/NvChad/starter %USERPROFILE%\AppData\Local\nvim && nvim
@@ -28,8 +28,8 @@ This repository contains a customized Neovim configuration for development with 
     git clone https://github.com/NvChad/starter $ENV:USERPROFILE\AppData\Local\nvim && nvim
    ```
 
-5. Clone this repository: `git clone https://github.com/selimserbes/nvim.git`.
-6. Copy `nvim/init.vim` to Neovim's configuration directory (`%APPDATA%\nvim\` on Windows).
+5. Clone this repository: `git clone https://github.com/selimserbes/nvim-for-windows.git`.
+6. Copy the contents of the `nvim-for-windows` folder to Neovim's configuration directory (`%LOCALAPPDATA%\nvim\` on Windows).
 7. Start `nvim` and wait for the plugins to install.
 
 ## Usage
