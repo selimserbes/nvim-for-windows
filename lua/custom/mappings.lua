@@ -28,4 +28,20 @@ M.gopher = {
   },
 }
 
+M.spectre = {
+  n = {
+    -- Open Spectre
+    ["<leader>ss"] = { "<cmd>lua require('spectre').open()<CR>", "Open Spectre" },
+
+    -- Search and replace in the current file
+    ["<leader>sw"] = { "<cmd>lua require('spectre').open_file_search({select_word=true})<CR>", "Search current file" },
+
+    -- Search and replace in the project/directory
+    ["<leader>sp"] = { "<cmd>lua require('spectre').open_visual({select_word=true})<CR>", "Search in project" },
+
+    -- Search the current word
+    ["<leader>sc"] = { "<cmd>lua require('spectre').open_visual()<CR>", "Search current word" },
+  },
+}
+
 return M

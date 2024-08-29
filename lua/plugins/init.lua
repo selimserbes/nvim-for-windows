@@ -25,6 +25,10 @@ local default_plugins = {
     end,
     config = function(_, opts)
       require "base46.term"
+      -- Windows Terminal'de varsayılan shell'i dinamik olarak belirleme
+      opts = opts or {}
+      opts.terminals = opts.terminals or {}
+      opts.terminals.shell = "pwsh.exe"
       require("nvterm").setup(opts)
     end,
   },

@@ -9,7 +9,7 @@ This repository contains a customized Neovim configuration for development with 
 3. Additionally, you may need to install other necessary tools for development.
 
    ```shell
-   scoop install gcc gdb mingw-winlibs-llvm-ucrt-mcf llvm zig
+   scoop install gcc gdb mingw-winlibs-llvm-ucrt-mcf llvm zig ripgrep
    ```
 
    1. You can also explore and install other useful software from [Scoop website](https://scoop.sh/#/apps).

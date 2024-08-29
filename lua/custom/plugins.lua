@@ -2,13 +2,21 @@ local extension_path = vim.env.HOME .. "\\AppData\\Local\\nvim-data\\mason\\pack
 
 local plugins = {
   {
+    "nvim-pack/nvim-spectre",
+    config = function()
+      require("spectre").setup()
+      require("core.utils").load_mappings "spectre"
+    end,
+    lazy = false,
+  },
+  {
     "mfussenegger/nvim-dap-python",
     ft = "python",
     dependencies = {
       "mfussenegger/nvim-dap",
       "rcarriga/nvim-dap-ui",
     },
-    config = function(_, opts)
+    config = function()
       local path = extension_path .. "debugpy/venv/Scripts/python.exe"
       require("dap-python").setup(path)
       require("core.utils").load_mappings "dap"
@@ -120,7 +128,7 @@ local plugins = {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function()
-      opts = require "plugins.configs.treesitter"
+      local opts = require "plugins.configs.treesitter"
       opts.ensure_installed = {
         "lua",
         "javascript",
