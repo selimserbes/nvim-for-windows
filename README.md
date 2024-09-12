@@ -19,13 +19,13 @@ This repository contains a customized Neovim configuration for development with 
    1. If you're using Command Prompt (CMD)
 
    ```shell
-    git clone https://github.com/NvChad/starter %USERPROFILE%\AppData\Local\nvim && nvim
+   git clone --branch v2.0 https://github.com/NvChad/NvChad %USERPROFILE%\AppData\Local\nvim && nvim
    ```
 
    2. If you're using PowerShell (pwsh):
 
    ```shell
-    git clone https://github.com/NvChad/starter $ENV:USERPROFILE\AppData\Local\nvim && nvim
+   git clone --branch v2.0 https://github.com/NvChad/NvChad $ENV:USERPROFILE\AppData\Local\nvim && nvim
    ```
 
 5. Clone this repository: `git clone https://github.com/selimserbes/nvim-for-windows.git`.
